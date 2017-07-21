@@ -1,0 +1,22 @@
+$default_font_family:  sans-serif;
+$default_font-size:    medium;
+$default_font-stretch: normal;
+$default_font-style:   normal;
+$default_font-variant: normal;
+$default_font_weight:  400;
+$default_line-height:  normal;
+
+$default_font_full: #{$default_font-style}
+                    #{$default_font-variant}
+                    #{$default_font_weight}
+                    #{$default_font-stretch}
+                    #{$default_font-size}/#{$default_line-height}
+                    #{$default_font_family};
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: $default_font_full;
+}
